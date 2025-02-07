@@ -1,0 +1,39 @@
+our course is divided into 2 parts :
+    1 -:- pl-Sql :
+            you think you know Sql
+                its not a programming language
+                    query we use it for to extract data form a database
+                        sql contains 2 groups ddl and dml
+                        DDL:
+                            data definition language
+                            create
+                        DML:
+                            data manipulation language
+                            update delete
+first part is DML and DDL and some theory:
+
+write a query that returns all attributes that table person contains :
+    ||select * from person;
+
+the general format of select is :
+    || select //attributes// From //tableName// ;
+    where //is a filter that requires  a condition//
+    Orderby // the term orderby will sort the records of the dynamic set
+the content of the table is static although u can add records
+    || select * from persons where person.region equals [r] ;
+    //because r isn't in the database it will ask the user to fill the r variable
+    // whenever i run it i can get any number of inputs and will get many possible outputs its dynamic
+consider person has 3 attributes credit debit and b_name :
+write a query that gets the credit and debit and the balance
+    ||select person.name,person.debit,person.credit , (credit - debit) as balance from person;
+a calculated field should not be in the table we put it in a query
+
+the difference between
+                        20/6*6 =   20*6/6
+                        3.3*6  =   120/6
+                        19.98  =   20
+whats the difference between left join right join and inner join
+
+
+select person.name,region.RName from person innerJoin 
+region on person.PRegion = region.id where region.RName = [r]

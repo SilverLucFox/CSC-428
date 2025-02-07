@@ -1,0 +1,28 @@
+chapter 0 :
+        understanding database
+        what is a database :
+            it's a set of data concerning a cretan subject
+        this set of data is divided into tables that represents
+        the attributes of an entity.
+        attributes are characteristics of an entity and one attribute cant be for two 2 entity
+        attribute are assigned if in singular
+        relation doesn't link 2 attribute
+        example :
+            person :(id, name, country)
+            country :(id, name)
+        the reasons to have a table(entity) country:
+            1-to minimize errors and typos
+            2-to reduce the size of the database(minimize the lose of space)
+        how to pick an primary key ?
+            - unique each record  has a different value of the primary key
+            - it should be accessible i should be able to access it
+            - it should be meaningfully
+        
+
+
+
+
+
+
+
+
