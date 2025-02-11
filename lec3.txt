@@ -1,0 +1,39 @@
+test ==>
+oracle is still till now the best BDRL
+    <SQL Commands DDL DCL DML >
+    DML:
+        insert  : insert data into a table
+---------------------------------------------------------------
+        update  : update existing data within a table
+---------------------------------------------------------------
+        delete  : delete records from a database
+---------------------------------------------------------------
+        lock    : table control concurrency
+                <lock in order to prevent other users to access
+                    the table that im editing while i edit it>
+---------------------------------------------------------------
+        call    : call a PL/SQL or JAVA subprogram
+---------------------------------------------------------------
+        explain
+        plan    :describe the access path to data
+____________________________________________________________________
+    DCL:
+
+        grant       :   assigns new privilege to a user account <or for a role> allowing access to
+                        specific database object actions or functions
+----------------------------------------------------------------
+        revoke      :   removes previous privilege
+____________________________________________________________________
+    TCL:
+        commit      :   saves all changes made during the transaction
+        
+    data integrity : is if i try to delete a record that exist in
+                    another table will not alow the deleting of said record
+        is some environments you will be asked if u want to delete any existing references to said record
+
+oracle DDL Commands:
+    Data definition language
+        <DDL> : Statements
+
+        CREATE database:
+
