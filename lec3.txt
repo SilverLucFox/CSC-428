@@ -48,9 +48,11 @@ ____________________________________________________________________
                         innerJoin   :
                                         it returns all related records in both tables
                         leftJoin    :
-                                        it returns 
+                                        it returns the records in left
                         rightJoin   :
-                                        it returns
+                                        it returns  the records in the right
+                        fullJoin    :
+                                        it returns all the records in all related tables 
 
 data integrity : is if i try to delete a record that exist in
                     another table will not alow the deleting of said record
