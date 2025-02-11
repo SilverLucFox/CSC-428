@@ -43,6 +43,14 @@ ____________________________________________________________________
         -orderby        :used to sort the result set in ascending <is the default> or descending order
         -join           :used to combine rows from two tables based on a related column between them 
 
+            JOIN    :
+                        i can join nested tables 
+                        innerJoin   :
+                                        it returns all related records in both tables
+                        leftJoin    :
+                                        it returns 
+                        rightJoin   :
+                                        it returns
 
 data integrity : is if i try to delete a record that exist in
                     another table will not alow the deleting of said record
