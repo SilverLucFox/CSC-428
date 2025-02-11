@@ -26,8 +26,25 @@ ____________________________________________________________________
 ____________________________________________________________________
     TCL:
         commit      :   saves all changes made during the transaction
-        
-    data integrity : is if i try to delete a record that exist in
+-----------------------------------------------------------------
+        rollback    :   undoes all changes made during the transaction
+-----------------------------------------------------------------
+        savepoint   :   create a savepoint within the current transaction
+____________________________________________________________________
+    important sql Commands :
+        -select         :used to retrieve data from database
+        -insert         :used to add new data to database
+        -update         :used to modify existing data in database
+        -delete         :used to remove data in database
+        -create table   :used to create a new table in database
+        -alter table    :used to modify the structure of an existing table
+        -drop table     :used to delete an entire table from a database
+        -where          :used to filter rows based on a specific condition
+        -orderby        :used to sort the result set in ascending <is the default> or descending order
+        -join           :used to combine rows from two tables based on a related column between them 
+
+
+data integrity : is if i try to delete a record that exist in
                     another table will not alow the deleting of said record
         is some environments you will be asked if u want to delete any existing references to said record
 
