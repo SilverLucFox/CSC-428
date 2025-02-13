@@ -62,5 +62,3 @@ oracle DDL Commands:
     Data definition language
         <DDL> : Statements
 
-        CREATE database:
-
