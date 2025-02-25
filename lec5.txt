@@ -1,0 +1,32 @@
+
+                                    {[tablespace]}
+
+Think of a database like a library.
+A tablespace is like a bookshelf in
+that library where you store books (data).
+Now, inside the bookshelf (tablespace),
+you put different books (tables).
+Each book has pages (rows of data).
+Why Use Tablespaces?
+    1 - Organized Storage
+            – Instead of throwing all books on the floor
+                (messy storage), you keep them in shelves
+                (tablespaces) to stay organized.
+    2 - Better Performance
+        – If books (data) are in the right
+            shelf (tablespace),
+            you can find them faster.
+    3 - Manage Disk Space
+        – Some bookshelves(tablespaces)
+            are bigger or smaller.
+            You can control where to store more books.
+    Real-World Example in a Database
+        - A tablespace is made
+            up of one or more files on the computer’s hard drive.
+Example in SQL (Oracle):
+        CREATE TABLESPACE my_shelf
+        DATAFILE 'my_shelf.dbf' SIZE 100M;
+This means:
+        Create a bookshelf (tablespace) named my_shelf
+        Put a storage file (‘my_shelf.dbf’) on the computer
+        Give it space (100MB) to store data
