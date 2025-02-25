@@ -1,0 +1,37 @@
+<
+    CREATE GLOBAL TEMPORARY TABLE taxable_emp
+        (   empno number(5),
+            ename varchar2(20),
+            sal number(10,2),
+            tax number(10,2) )
+        ON COMMIT DELETE ROWS
+>
+    
+
+    use the ALTER TABLE statement to ALTER the structure of a table
+
+    <
+        ALTER TABLE emp add (addr varchar2(20), city varchar2(20)
+                            ,pin varchar2(10));
+    >
+    to modify the datatype and width of a column for example you want to increase the length
+        of the column ename from varchar2(20) to varchar2(30) then give the following command.
+        <alter table emp modify(ename varchar2(30));>
+        to decrease the width of a column can be decreased up to largest value it holds
+        <alter table emp modify (ename varchar2(15));>
+        the above is possible only if you are using Oracle ver 8i and above
+    to Drop columns :
+        from Oracle ver 8i you can drop columns it was not possible in previous versions
+            <alter table emp drop column(pin,city);>
+        remember you cannot drop the column if the table is having only one column.
+        if ther column you want to drop is having primary kry constraint on it then you
+            have to give cascade constraint clause
+            <alter table emp2 drop column (empno) cascade constraints;>
+        all related records with this column will be DELETed
+        if it was a modify the records related will be modified 
+        because we dropped the primary key with cascade we will DELETE all related records
+
+        step 1 : CREATE a temp table with desired columns using subquery
+        step 2 : drop the original table
+        step 3 : rename the TEMPORARY table to the original table
+        
