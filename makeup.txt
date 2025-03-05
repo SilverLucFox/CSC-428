@@ -1,0 +1,6 @@
+The ENABLE ROW MOVEMENT clause is specified to allow the automatic migration of
+a row to a new partition if an update to a key value is made that would place the
+row in a different partition.
+
+The lower boundary of every interval partition is the non-inclusive upper boundary
+of the previous range or interval partition.
